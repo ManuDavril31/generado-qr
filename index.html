@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=|, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: darkgrey">
+    <h1 style="text-align: center">Generardor de QR solo para enlaces web</h1>
+    <div style="margin: auto; width: 80%">
+      <canvas id="qrCodeCanvas" style="display: none"></canvas>
+      <br />
+      <br />
+      <button
+        onclick="downloadQRCode()"
+        id="btnDescargarQr"
+        style="display: none"
+      >
+        Descargar QR
+      </button>
+      <form>
+        <br />
+        <label for="valueInput">Ingrese una url valida para generar QR</label>
+        <br />
+        <br />
+        <input type="text" id="valueInput" required />
+        <button id="btnGenerate">Generar QR</button>
+      </form>
+      <br />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="modulos.js"></script>
+  </body>
+  <footer style="text-align: center; font-size: 12px; padding-top: 100px">
+    <p>Generador de codigos QR solo para enlaces web | by Manudavril</p>
+  </footer>
+</html>
